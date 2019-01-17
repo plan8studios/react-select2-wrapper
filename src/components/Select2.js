@@ -156,7 +156,7 @@ export default class Select2 extends Component {
   }
 
   prepareValue(value, defaultValue) {
-    const issetValue = typeof value !== 'undefined' && value !== null;
+    const issetValue = typeof value !== 'undefined' && value !== null && value !== '';
     const issetDefaultValue = typeof defaultValue !== 'undefined';
 
     if (!issetValue && issetDefaultValue) {
